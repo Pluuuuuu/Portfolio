@@ -1,0 +1,183 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.main_container{
+    display: grid;
+    grid-template-rows: auto 1fr; /* Header gets "auto" height, container gets remaining space */
+    background-color: #222831;
+}
+.header{
+    background-color: #393E46;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Menu takes 1fr, logo takes auto */
+    align-items: center; /* Aligns both menu and logo vertically */
+    padding: 10px 25px;
+}
+.nav .menu{
+    list-style: none;
+    display: grid; /* Use grid for flexibility */
+    justify-self: end;
+    grid-auto-flow: column; /* Arrange items in a row */
+    gap: 20px; /* Add space between menu items */
+}
+.nav .menu li {
+    display: inline;
+  }
+.nav .menu a {
+    text-decoration: none;
+    color: #00ADB5;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+.nav a:active {
+    font-weight: bold;
+    color: #00FFF5;
+  }
+.logo_img img {
+    width: auto; /* Set a specific width */
+    height: 40px; /* Set a specific height */
+    object-fit: contain; /* Ensure the image fits nicely within these dimensions */
+  }
+.heart img {
+    width: auto; /* Set a specific width */
+    height: 40px; /* Set a specific height */
+    object-fit: contain; /* Ensure the image fits nicely within these dimensions */
+    align-items: right;
+    }
+
+.part_one{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: auto;
+    text-align: center;
+}
+.text_one{
+    padding-top: 50px;
+    position: relative;/* Ensures the h3's absolute positioning is relative to this container */
+}
+.text_one h3{
+    font-family: 'Italiana', sans-serif;
+    color: #00ADB5;
+    position: absolute;/*lets you move the h3 around the .container.*/
+    top: 90px; /* moves the h3 20 pixels above the h2 | Adjusts vertical positioning above the h2 */
+    left: 165;    /* aligns the h3 to the left side of the container| Aligns the h3 to the left */
+    font-size: 32px; /* Optional: Adjust font size for h3 */
+}
+.text_one h2::first-letter{
+    font-family: 'Inspiration', cursive;
+    color: #00FFF5;
+    font-size: 180px
+}
+.text_one h2{
+    font-family: "Irish Grover", system-ui;
+    color: #00ADB5;
+    font-size: 80px;
+}
+.image_one{
+    margin: auto;
+}
+button{
+    border-radius: 30px;
+    background-color: #00ADB5;
+    color:#00FFF6;
+    font-family: 'Inspiration', cursive;
+    width: 100px;      /* Set a specific width */
+    height: 40px;      /* Set a specific height */
+    font-size: 18px;   /* Increase the text size */
+    cursor: pointer; /*when we put it on the button it will show it as a pointer hand*/
+}
+.footer{
+    background-color: #393E46;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Menu takes 1fr, logo takes auto */
+    align-items: center; /* Aligns both menu and logo vertically */
+    padding: 20px 60px;
+}
+.footer_nav .f_menu{
+    list-style: none;
+    display: grid; /* Use grid for flexibility */
+    justify-self: center;
+    grid-auto-flow: row; /* Arrange items in a row */
+    gap: 20px; /* Add space between menu items */
+    padding: 10px;
+}
+.footer_nav .f_menu li {
+    display: inline;
+  }
+  .footer_nav h3{
+    color:#00FFF5;
+    align-items: left;
+  }
+  .footer_nav .f_menu a {
+    text-decoration: none;
+    color: #00ADB5;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  .footer_img img {
+    width: auto; /* Set a specific width */
+    height: 40px; /* Set a specific height */
+    object-fit: contain; /* Ensure the image fits nicely within these dimensions */
+  }
+  .f_contactform{
+    background-color: gray;
+    border-radius: 10px;
+    width: 250px;
+    height: 125px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+
+  }
+  label .message_box{
+    width: 250px;
+    height: 15px;
+  }
+
+.project_container{
+  background-color: #222831 ;
+  margin: auto;
+  justify-content: center;
+}
+.mg_prrojects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.myprj{
+  text-align: center;
+    font-family: "Irish Grover", system-ui;
+    color: #00ADB5;
+    font-size: 80px;
+}
+
+.myprj h2::first-letter{
+    font-family: 'Inspiration', cursive;
+    color: #00FFF5;
+    font-size: 180px
+}
+.img_prrojects{
+  justify-self: center;
+}
+.pawpal_container{
+  background-color: #222831 ;
+}
+.pawl_part1{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: auto;
+  text-align: center;
+}
+.pawpal_body{
+  margin: auto;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+}
+.bod_part_two h2{
+  font-family: "Irish Grover", system-ui;
+  color: #00ADB5;
+  font-size: 65px;
+}
